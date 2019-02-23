@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Excercise 2 - Riska Widiya A</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+      .btn {
+          width: 32%;
+          margin: auto;
+      }
+
+      .container {
+          width: 400px;
+          height: 350px;
+          padding: 20px;
+          position: fixed;
+          top: 35%;
+          left: 50%;
+          margin-top: -120px;
+          margin-left: -220px;  
+      }
+
+      .ft {
+          text-align: center;
+          font-family: 'Impact';
+          color: #464545;
+          font-size: 2em;
+      }
+
+      .ht {
+          text-align: center;
+          font-family: 'Impact';
+          color: #5BCEB5;
+          font-size: 2em;
+      }
+
+      .ipt {
+          width: 100%;
+          background: #5BCEB5;
+      }
+
+      .opt {
+          width: 100%;
+          background: #C4C1C1;
+      }
+
+      .wrapper {
+          width: 400px;
+          padding: 25px;
+          position: fixed;
+          left: 34%;
+      }
+  </style>
+</head>
+<body>
+    <div class="container shadow p-3 mb-5 bg-white rounded">
+        <ul class="list-inline">
+            <li class="list-inline-item ft">KALKULATOR</li>
+            <li class="list-inline-item ht">SEDERHANA</li>
+        </ul>
+        <div class="wrapper">
+            <div>
+                <input type="text" disabled id="output" class="opt rounded" value="0">
+            </div>
+
+            <div>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=1" onclick="btn('1')">1</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=2" onclick="btn('2')">2</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=3" onclick="btn('3')">3</button>
+            </div>
+            <div>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=4" onclick="btn('4')">4</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=5" onclick="btn('5')">5</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=6" onclick="btn('6')">6</button>
+            </div>
+            <div>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=7" onclick="btn('7')">7</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=8" onclick="btn('8')">8</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=9" onclick="btn('9')">9</button>
+            </div>
+            <div>
+                <button class="btn btn-dark" onclick='btn_op(1)'>+</button>
+                <button class="btn btn-light" onclick="document.getElementById('output').value=0" onclick="btn('0')">0</button>
+                <button class="btn btn-secondary" onclick='btn_op(2)'>-</button>
+            </div>
+            <div>
+                <button class="btn btn-light ipt" onclick='hitung()'>=</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
